@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+<html>
+<head>
+    {% block title %}
+        <title>Players</title>
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+    <style>
+        body {
+            background-color: aquamarine
+        }
+
+        h5 {
+            color: blue
+        }
+
+        strong {
+            font-size: 30px;
+            color: blueviolet
+        }
+    </style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mt-2 mb-2" align="center">
+                <img src="{{ team.team_logo.url }}" width="100" height="100">
+                <strong>{{ team.team_name |capfirst }} Cricket Team Players</strong>
+            </div>
+        </div>
+        {% if team.cricketplayer_set.all %}
+            <div class="row">
+                {% for player in team.cricketplayer_set.all %}
+                    <div class="col" align="center">
+                        <div class="card-header"></div>
+                        <div class="card-body bg-light"
+                             style="border-radius: 5px;padding: 10px;width: 300px;height: 350px">
+                            <a href="{% url 'cricket_application:player_detail' player.player_id %}">
+                                <img src="{{ player.player_image.url }}" alt="Player Image" height="200" width="200">
+                                <h5><a href="{% url 'cricket_application:player_detail' player.player_id %}">
+                                    {{ player.first_name }} {{ player.last_name }}</a></h5>
+                            </a>
+                            <h5>Jersy No:{{ player.jersey_number }}</h5>
+                            <h5>Country: {{ player.country.name|upper }}</h5>
+
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+
+
+                {% endfor %}
+            </div>
+        {% else %}
+            <h3>No data available</h3>
+            <a href="/admin/cricket_application/cricketplayer/add/" class="btn btn-primary">Add a player</a>
+        {% endif %}
+    </div>
+{% endblock content %}
+</body>
+</html>
+

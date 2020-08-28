@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b38fce93-d568-4338-a602-1277d53ec672" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gdjh8NTt5BoOM5VuCda6WkM7fB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../video-service/Ekart_prj" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\yogi\cricket_project" />
+      <recent name="F:\yogi\cricket_project\static\logos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\yogi\cricket_project\templates\players" />
+      <recent name="F:\yogi\cricket_project\templates\teams" />
+      <recent name="F:\yogi\cricket_project\templates\matches" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.cricket_project">
+    <configuration name="Test: cricket_application.tests.ModelTest.test_fields" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="cricket_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="cricket_application.tests.ModelTest.test_fields" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: cricket_application.tests.SampleTest.test_MatchFixture_list_GET" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="cricket_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="cricket_application.tests.SampleTest.test_MatchFixture_list_GET" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: cricket_application.tests.SampleTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="cricket_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="cricket_application.tests.SampleTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: cricket_application.tests.UrlsTest.test_home_url_is_resolved" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="cricket_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="cricket_application.tests.UrlsTest.test_home_url_is_resolved" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cricket_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="cricket_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="cricket_project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: cricket_application.tests.SampleTests" />
+        <item itemvalue="Django tests.Test: cricket_application.tests.SampleTest.test_MatchFixture_list_GET" />
+        <item itemvalue="Django tests.Test: cricket_application.tests.UrlsTest.test_home_url_is_resolved" />
+        <item itemvalue="Django tests.Test: cricket_application.tests.ModelTest.test_fields" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b38fce93-d568-4338-a602-1277d53ec672" name="Default Changelist" comment="" />
+      <created>1598451479323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598451479323</updated>
+      <workItem from="1598451499145" duration="16441000" />
+      <workItem from="1598499977514" duration="30151000" />
+      <workItem from="1598541259113" duration="26518000" />
+      <workItem from="1598584344068" duration="8860000" />
+      <workItem from="1598593309287" duration="12199000" />
+      <workItem from="1598608504499" duration="374000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598602117098">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598602117098" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1598600590473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598600590473" />
+    <state width="1323" height="143" key="GridCell.Tab.0.bottom" timestamp="1598593294725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598593294725" />
+    <state width="1323" height="143" key="GridCell.Tab.0.center" timestamp="1598593294725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="143" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598593294725" />
+    <state width="1323" height="143" key="GridCell.Tab.0.left" timestamp="1598593294725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="143" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598593294725" />
+    <state width="1323" height="143" key="GridCell.Tab.0.right" timestamp="1598593294725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="143" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598593294725" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1598593445870">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598593445870" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1598608540396">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1598608540396" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cricket_project$Test__cricket_application.coverage" NAME="Test: cricket_application Coverage Results" MODIFIED="1598586288263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cricket_project$Test__cricket_application_tests_SampleTest_test_MatchFixture_list_GET.coverage" NAME="Test: cricket_application.tests.SampleTest.test_MatchFixture_list_GET Coverage Results" MODIFIED="1598590720978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cricket_project$Test__cricket_application_tests_ModelTest_test_fields.coverage" NAME="Test: cricket_application.tests.ModelTest.test_fields Coverage Results" MODIFIED="1598590419914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cricket_project$Test__cricket_application_tests_UrlsTest_test_home_url_is_resolved.coverage" NAME="Test: cricket_application.tests.UrlsTest.test_home_url_is_resolved Coverage Results" MODIFIED="1598590608411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cricket_project$Test__cricket_application_tests_SampleTests.coverage" NAME="Test: cricket_application.tests.SampleTests Coverage Results" MODIFIED="1598590760390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

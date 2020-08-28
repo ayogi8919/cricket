@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h4 style="text-align: center">Update match winner</h4>
+    <div class="container">
+        <div class="row">
+            <div class="offset-3 col-4">
+                <form action="{% url 'cricket_application:update_match' match.id %}" method="post">
+                    {% csrf_token %}
+                    <label for="TeamA">Playing Team1 :</label>
+                    <input name="TeamA" id="TeamA" class="form-control" readonly value="{{ match.playing_team1 }}">
+                    <label for="TeamB">Playing Team2 :</label>
+                    <input name="TeamB" id="TeamB" class="form-control" readonly value="{{ match.playing_team2 }}">
+                    <label for="venue"> Match Venue :</label>
+                    <input name="venue" id="venue" class="form-control" readonly value="{{ match.match_venue }}">
+                    <label for="date"> Match Date :</label>
+                    <input type="text" id="date" name="match_date" class="form-control" readonly
+                           value="{{ match.match_date }}">
+                    <label for="win"> Match Winner :</label>
+                    <select name="win" id="win" class="form-control">
+                        <option></option>
+                        <option>{{ match.playing_team1 }}</option>
+                        <option>{{ match.playing_team2 }}</option>
+                    </select>
+                    <br>
+                    <center>
+                        <input type="submit" value="Update Match Winner" class="btn btn-success">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

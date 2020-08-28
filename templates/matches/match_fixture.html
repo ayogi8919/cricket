@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container-fluid">
+        <h2 align="center">Match Fixtures</h2>
+        <div class="row">
+            {% if matches %}
+                <table class="table">
+                    <thead align="center" class="bg-dark">
+                    <tr>
+                        <th>Match Between Teams</th>
+                        <th>Match Date</th>
+                        <th>Match Location</th>
+                        <th>Match Winner</th>
+                    </tr>
+                    </thead>
+                    <tbody align="center">
+                    {% for match in matches %}
+                        <tr>
+                            <td>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col" align="center">
+                                            <img src="{{ match.playing_team1_logo.url }}" height="50" width="50">
+                                            <h5>{{ match.playing_team1 }}</h5>
+                                        </div>
+                                        <div class="col" align="center">
+                                            <h4>Vs</h4>
+                                        </div>
+                                        <div class="col" align="center">
+                                            <img src="{{ match.playing_team2_logo.url }}" height="50" width="50">
+                                            <h5>{{ match.playing_team2 }}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card-body">
+                                    {{ match.match_date }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card-body">
+                                    {{ match.match_venue }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card-body">
+                                    {% if not match.match_winner %}
+                                        <a href="/update_match/{{ match.id }}" class="btn btn-warning">Update</a>
+                                    {% else %}
+                                        {{ match.match_winner }}
+                                    {% endif %}
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <h3>No matches scheduled..</h3>
+            {% endif %}
+        </div>
+        {#        <a href="{% url 'cricket_application:matches_create' %}">Create another match</a>#}
+    </div>
+
+{% endblock %}

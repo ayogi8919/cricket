@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+a{color: orange}
+</style>
+    <div class="container">
+        <div class="row">
+
+            <div class="offset-3 col-4">
+                <h4 align="center">Schedule a match</h4>
+                <form action="{% url 'cricket_application:save_match' %}" method="post">
+                    {% csrf_token %}
+                    <label for="Teams">Match Between :</label>
+                    <select name="Teams" id="Teams" class="form-control" required="True">
+                        <option></option>
+                        {% for teams in match_teams %}
+                            <option>{{ teams }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if not match_teams %}
+                        <a href="/admin/cricket_application/cricketteam/add/"> Add Teams here..</a><br>
+                    {% endif %}
+                    <label for="venue"> Match Venue :</label>
+                    <select name="venue" id="venue" class="form-control" required="True">
+                        <option></option>
+                        {% for venue in venues %}
+                            <option>{{ venue }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if not venues %}
+                        <a href="/admin/cricket_application/matchvenues/add/"> Add Venues here..</a><br>
+                    {% endif %}
+                    <label for="date"> Match Date :</label>
+                    <input type="datetime-local" id="date" name="match_date" class="form-control" required="True">
+                    <br>
+                    <center>
+                        <input type="submit" value="Schedule a Match" class="btn btn-primary">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

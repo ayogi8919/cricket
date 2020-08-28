@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    {% block title %}
+        <title>Player_Profile</title>
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+    <style>
+        body {
+            background-color: aquamarine;
+
+        }
+
+        h5 {
+            color: blue
+        }
+
+        strong {
+            font-size: 30px;
+            color: blueviolet
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            {% if object %}
+                <div class="col mt-2 mb-2" align="center">
+
+                    <img src="{{ team.team_logo.url }}" width="100" height="100" alt={{ team.team_name }}>
+                    <strong>{{ object.player.first_name|capfirst }} {{ object.player.last_name|capfirst }}
+                        History</strong>
+                </div>
+
+                </div>
+                <div class="row mt-4">
+                <div class="col-3">
+                    {% for player in team.cricketplayer_set.all %}
+                        <div class="col">
+                            <h3><strong>
+                                <a href="{% url 'cricket_application:player_detail' player.player_id %}"
+                                   class="btn btn-outline-secondary col">
+                                    {{ player.first_name|capfirst }} {{ player.last_name|capfirst }}
+                                </a></strong></h3>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col" align="center">
+                    <img src="{{ object.player.player_image.url }}" height="400" width="400"></div>
+                <div class="col">
+                    <table class="table bg-dark">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>:</th>
+                            <th>{{ object.player.first_name }} {{ object.player.last_name }}</th>
+                        </tr>
+                        <tr>
+                            <th>Jersy Number</th>
+                            <th>:</th>
+                            <th>{{ object.player.jersey_number }}</th>
+                        </tr>
+                        <tr>
+                            <th>Nationality</th>
+                            <th>:</th>
+                            <th>{{ object.player.country.name }}</th>
+                        </tr>
+                        <tr>
+                            <th>Matches</th>
+                            <th>:</th>
+                            <th>{{ object.matches_played }}</th>
+                        </tr>
+                        <tr>
+                            <th>Runs</th>
+                            <th>:</th>
+                            <th>{{ object.highest_score }}</th>
+                        </tr>
+                        <tr>
+                            <th>Highest</th>
+                            <th>:</th>
+                            <th>{{ object.highest_score }}</th>
+                        </tr>
+                        <tr>
+                            <th>Fifties</th>
+                            <th>:</th>
+                            <th>{{ object.fifties }}</th>
+                        </tr>
+                        <tr>
+                            <th>Hundreds</th>
+                            <th>:</th>
+                            <th>{{ object.hundreds }}</th>
+                        </tr>
+
+                        </thead>
+                    </table>
+                </div>
+            {% else %}
+                <h3><a href="/admin/cricket_application/playerhistory/add/">Add Player Details Here..</a></h3>
+            {% endif %}
+            </div>
+    </div>
+{% endblock content %}
+</body>
+</html>

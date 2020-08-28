@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    {% block title %}
+        <title>Teams</title>
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+
+    <div class="container-fluid">
+
+        <h3 align="center">List of Cricket Teams</h3>
+
+        <div class="row mt-4">
+            {% if teams %}
+                {% for team in teams %}
+                    <div class="col" align="center">
+                        <div class="card-header"></div>
+                        <div class="card-body bg-light"
+                             style="border-radius: 5px;padding: 10px;width: 300px;height: 300px">
+                            <a href="{{ team.team_identifier }}/">
+                                <img src="{{ team.team_logo.url }}" alt={{ team.team_name }} height="200" width="200">
+                                <h3><strong><a href="{{ team.team_identifier }}/">
+                                    {{ team.team_name }}</a></strong></h3>
+                            </a>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h2>No Teams Created</h2><br>
+                <a href="/admin/cricket_application/cricketteam/add/">
+                    <button class="ml-5 btn btn-warning">Create here</button>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}
+</body>
+</html>
